@@ -91,3 +91,72 @@ body {
       min-height: 80px;
       white-space: pre-wrap;
     }
+	
+
+/* Desktops (above 768px) – optional tweaks */
+@media (min-width: 1024px) {
+  main {
+    max-width: 900px;
+  }
+
+  header h1 {
+    font-size: 2.7rem;
+  }
+
+  .project-button {
+    font-size: 1.05rem;
+  }
+}	
+
+
+/* Tablets (481px to 768px) */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1.1rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .project-button {
+    padding: 9px 18px;
+    font-size: 1rem;
+  }
+
+  #type-effect {
+    font-size: 1.05rem;
+  }
+}
+  
+/* Mobile phones (up to 480px) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  main {
+    padding: 0 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  #type-effect {
+    font-size: 1rem;
+  }
+}
