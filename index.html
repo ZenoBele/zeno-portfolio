@@ -3,23 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zeno Bell | Portfolio</title>
-  <link rel="stylesheet" href="index.css" />
+  <title>Zeno Bele | Front-End Developer</title>
+<link rel="stylesheet" href="index.css" />
 </head>
 <body>
-  <header>
-    <h1>Zeno Bele</h1>
-    <p>Front-End Developer | HTML • CSS • Firebase</p>
+
+  <header> 
+    <h1>Hi Aam, Zeno Bele</h1>
+    <p>A Front-End Developer | HTML • CSS • Firebase</p>
   </header>
+
   <main>
 
-<section>
-  <h2>About Me</h2>
-  <p>
-    I’m a front-end developer from South Africa, currently studying towards a degree at UNISA.
-    I’m also building an academic platform called “Top Student” to help high school learners succeed.
-  </p>
-</section>
+    <section>
+      <h2>About Me</h2>
+      <p id="type-effect"></p>
+    </section>
 
     <section>
       <h2>Projects</h2>
@@ -27,19 +26,38 @@
         <li><strong>Top Student</strong> – Academic platform for students</li>
         <li><strong>Email Template Project</strong> – Responsive, HTML-based email design (Coming Soon)</li>
       </ul>
+
+      <ul>
+        <li><strong>Responsive Email Template</strong> – 
+          <a href="https://ZenoBele.github.io/responsive-email-template" class="project-button" target="_blank">
+            View Demo
+          </a>
+        </li>
+      </ul>
     </section>
-	
-	<ul>
-  <li><strong>Top Student</strong> – Academic platform for students</li>
-  <li>
-    <strong>Responsive Email Template</strong> – 
-    <a href="https://yourusername.github.io/responsive-email-template" target="_blank">View Demo</a>
-  </li>
-</ul>
-	
+
   </main>
+
   <footer>
-    <p>Contact: belevhulenda57@email.com | GitHub: @ZenoBele</p>
+    <p>Contact: belevhulenda57@email.com | GitHub: <a href="https://github.com/ZenoBele" target="_blank" style="color: #FACC15; text-decoration: underline;">@ZenoBele</a></p>
   </footer>
+
+  <script>
+    const text = `I’m a front-end developer from South Africa, currently studying towards a degree at UNISA.
+I’m also building an academic platform called “Top Student” to help high school learners succeed.`;
+
+    const el = document.getElementById("type-effect");
+    let index = 0;
+
+    function typeOnce() {
+      if (index <= text.length) {
+        el.textContent = text.slice(0, index++);
+        setTimeout(typeOnce, 30);
+      }
+    }
+
+    typeOnce();
+  </script>
+
 </body>
 </html>
