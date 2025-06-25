@@ -2,33 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Vhulenda Bele | CV</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  />
   <style>
-    body { font-family: 'Inter', sans-serif; }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+	
+	.frosted-glass {
+    background-color: rgba(255, 255, 255, 0.15); /* translucent */
+    backdrop-filter: blur(10px); /* blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+  }
+	
     .typewriter > span {
-      border-right: .15em solid #4f46e5;
+      border-right: 0.15em solid #4f46e5;
       white-space: nowrap;
       overflow: hidden;
-      animation: typing 3s steps(40, end), blink .75s step-end infinite;
+      animation: typing 3s steps(40, end), blink 0.75s step-end infinite;
+      display: inline-block;
+      max-width: 100%;
     }
     @keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
     }
     @keyframes blink {
-      50% { border-color: transparent }
+      50% {
+        border-color: transparent;
+      }
     }
     a.underline-hover {
       position: relative;
     }
     a.underline-hover::after {
-      content: "";
+      content: '';
       position: absolute;
       width: 0;
       left: 50%;
@@ -43,70 +66,93 @@
     }
   </style>
 </head>
-<body class="bg-gradient-to-br from-indigo-700 to-purple-600 text-white">
+<body class="bg-gradient-to-br from-indigo-700 to-purple-600 text-white min-h-screen flex flex-col">
 
   <!-- Navbar -->
-  <header class="bg-white/10 backdrop-blur sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
-      <img src="BV.png" alt="BV Logo" class="h-12 full">
-      <nav class="flex space-x-6 text-lg font-bold items-center">
-  <a href="https://github.com/ZenoBele" class="underline-hover">GitHub</a>
-  <a href="https://topstudent.co.za" class="underline-hover">Top Student</a>
-  <a href="#" class="underline-hover">Coming Some</a>
-</nav>
-      <div class="flex space-x-4 items-center text-xs"> 
-  <ul class="flex space-x-4">
-    <li class="flex items-center space-x-1">
-      <a href="tel:+27712128965" class="hover:text-green-600 transition-colors duration-300">
+  <header class="frosted-glass sticky top-0 z-50">
+  <div
+    class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between p-4 gap-4"
+  >
+    <div class="text-center sm:text-left">
+      <h1 class="font-bold text-white text-4xl">B.V</h1>
+      <p class="italic font-bold text-white text-sm">Code with purpose</p>
+    </div>
+    <nav class="flex flex-col sm:flex-row sm:space-x-6 space-y-2 sm:space-y-0 text-lg font-bold items-center text-white">
+      <a href="https://github.com/ZenoBele" class="underline-hover">GitHub</a>
+      <a href="https://topstudent.co.za" class="underline-hover">Top Student</a>
+      <a href="#" class="underline-hover">Coming Soon</a>
+    </nav>
+    <div class="flex space-x-6 text-xs text-white">
+      <a href="tel:+27712128965" class="hover:text-green-400 transition-colors duration-300" aria-label="Phone">
         <i class="fa-solid fa-phone"></i>
       </a>
-    </li>
-    <li class="flex items-center space-x-1">
-      <a href="mailto:belevhulenda57@gmail.com" class="hover:text-red-600 transition-colors duration-300">
+      <a href="mailto:belevhulenda57@gmail.com" class="hover:text-red-400 transition-colors duration-300" aria-label="Email">
         <i class="fa-solid fa-user"></i>
       </a>
-    </li>
-  </ul>
-</div>
     </div>
-  </header>
+  </div>
+</header>
 
   <!-- Hero Section -->
-  <section class="text-center py-20">
-    <h1 class="text-5xl font-bold">Vhulenda Bele</h1>
-    <h2 class="mt-4 text-2xl typewriter"><span>Driven. Versatile. Ready to Excel in Any Team.</span></h2>
-  </section>
+  <section class="text-center py-16 px-4 w-full max-w-screen-sm mx-auto">
+  <h1 class="text-4xl sm:text-5xl font-bold leading-tight">
+    Vhulenda Bele
+  </h1>
+  <h2 class="mt-4 text-xl sm:text-2xl typewriter">
+    <span>Driven. Fast Learner. Ready to Excel in Any Team.</span>
+  </h2>
+</section>
 
   <!-- About Me -->
-  <section class="max-w-5xl mx-auto px-6 py-12 rounded-2xl bg-white/20 backdrop-blur-sm" data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-4 text-center">About Me</h2>
-    <p class="text-lg leading-relaxed">
-      I am a disciplined, solutions-driven individual with a reputation for dependability, clarity, and commitment. I have a strong foundation in web development, excellent communication skills, and the ability to thrive in diverse environments—whether technical, creative, or support-based. I bring structure and energy to any team I join, with a self-starting mindset that suits both collaborative and independent tasks. I take pride in learning fast, adapting to new roles, and delivering work that’s clean, useful, and forward-thinking.
+  <section
+    class="max-w-3xl mx-auto px-6 py-10 rounded-2xl bg-white/20 backdrop-blur-sm mb-8"
+    data-aos="fade-up"
+  >
+    <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-center">About Me</h2>
+    <p class="text-base sm:text-lg leading-relaxed">
+      I am a disciplined, solutions-driven individual with a reputation for
+      dependability, clarity, and commitment. I have a strong foundation in web
+      development, excellent communication skills, and the ability to thrive in
+      diverse environments—whether technical, creative, or support-based. I
+      bring structure and energy to any team I join, with a self-starting
+      mindset that suits both collaborative and independent tasks. I take pride
+      in learning fast, adapting to new roles, and delivering work that’s clean,
+      useful, and forward-thinking.
     </p>
   </section>
 
   <!-- Biographic Details -->
-  <section class="bg-white text-gray-800 py-12 px-6 my-4 mx-8 rounded-2xl" data-aos="fade-up">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl font-bold mb-4 text-center">Biographic Details</h2>
-      <ul class="grid grid-cols-1 text-center sm:grid-cols-2 gap-4 text-sm">
-        <li><strong>Surname:</strong> Bele</li>
-        <li><strong>First Name:</strong> Vhulenda</li>
-        <li><strong>Address:</strong> Remote | Gauteng | South Africa</li>
-        <li><strong>Mobile Contact:</strong> 0712128965</li>
-        <li><strong>Email:</strong> belevhulenda57@gmail.com</li>
-        <li><strong>Date of Birth:</strong> 2004-05-15</li>
-        <li><strong>Age:</strong> 21</li>
-        <li><strong>Gender:</strong> Male</li>
-        <li><strong>Disabilities:</strong> None</li>
-      </ul>
-    </div>
+  <section
+    class="bg-white text-gray-800 py-12 px-6 rounded-2xl max-w-3xl mx-auto mb-8"
+    data-aos="fade-up"
+  >
+    <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center">
+      Biographic Details
+    </h2>
+    <ul
+      class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center text-sm sm:text-base"
+    >
+      <li><strong>Surname:</strong> Bele</li>
+      <li><strong>First Name:</strong> Vhulenda</li>
+      <li><strong>Address:</strong> Remote | Gauteng | South Africa</li>
+      <li><strong>Mobile Contact:</strong> 0712128965</li>
+      <li><strong>Email:</strong> belevhulenda57@gmail.com</li>
+      <li><strong>Date of Birth:</strong> 2004-05-15</li>
+      <li><strong>Age:</strong> 21</li>
+      <li><strong>Gender:</strong> Male</li>
+      <li><strong>Disabilities:</strong> None</li>
+    </ul>
   </section>
 
   <!-- Skills -->
-  <section class="py-12 px-6 max-w-5xl mx-auto" data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-4 text-center">Skills</h2>
-    <div class="grid grid-cols-2 sm:grid-cols-3 text-center gap-4 text-sm mb-6">
+  <section
+    class="py-12 px-6 max-w-3xl mx-auto mb-8"
+    data-aos="fade-up"
+  >
+    <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center">Skills</h2>
+    <div
+      class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center text-sm sm:text-base mb-6"
+    >
       <div>Emotional Intelligence</div>
       <div>Adaptability</div>
       <div>Time Management</div>
@@ -118,60 +164,88 @@
       <div>Figma Basics / UI Thinking</div>
     </div>
     <div class="text-center">
-      <a href="https://topstudent.co.za" class="inline-block bg-white text-indigo-700 font-bold px-6 py-3 rounded-full shadow-md animate-bounce hover:px-8 transition transform">Check Me Out →</a>
+      <a
+        href="https://topstudent.co.za"
+        class="inline-block bg-white text-indigo-700 font-bold px-6 py-3 rounded-full shadow-md animate-bounce hover:px-8 transition-transform"
+        >Check Me Out →</a
+      >
     </div>
   </section>
 
   <!-- Education -->
-  <section class="bg-white text-gray-800 py-12 px-6 my-8 mx-32 rounded-2xl shadow-lg" data-aos="fade-up">
-  <div class="max-w-3xl mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-6">Education & Certificates</h2>
-    <ul class="list-disc list-inside text-base text-left mx-auto inline-block space-y-3">
-      <li>Grade 12 (NSC), Vele Secondary (2017–2021) - Biology, Science, Maths, Geography</li>
+  <section
+    class="bg-white text-gray-800 py-12 px-6 mx-4 sm:mx-8 md:mx-auto max-w-3xl rounded-2xl shadow-lg mb-8"
+    data-aos="fade-up"
+  >
+    <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-center">
+      Education & Certificates
+    </h2>
+    <ul
+      class="list-disc list-inside text-base text-left space-y-3 max-w-xl mx-auto"
+    >
+      <li>
+        Grade 12 (NSC), Vele Secondary (2017–2021) - Biology, Science, Maths,
+        Geography
+      </li>
       <li>Advanced Computer Certificate</li>
       <li>
-        Responsive Web Design Certificate – 
-        <a href="https://www.freecodecamp.org/certification/Vhulenda/responsive-web-design" class="text-indigo-600 underline hover:text-indigo-800 transition" target="_blank">
-          freeCodeCamp.org
-        </a>
+        Responsive Web Design Certificate –
+        <a
+          href="https://www.freecodecamp.org/certification/Vhulenda/responsive-web-design"
+          class="text-indigo-600 underline hover:text-indigo-800 transition"
+          target="_blank"
+          >freeCodeCamp.org</a
+        >
       </li>
     </ul>
-  </div>
-</section>
+  </section>
 
   <!-- Work Experience -->
-  <section class="py-12 px-6 max-w-5xl mx-auto" data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-4 text-center">Work Experience</h2>
-    <p class="text-center text-sm">
-      Since 2023, I’ve immersed myself in front-end development, creating responsive web layouts, email templates, and UI prototypes. I currently manage the front end of an academic platform, maintaining structured, maintainable code while continuously improving UX/UI design. I also take initiative in solo projects and freelance opportunities, contributing to multiple areas such as accessibility, testing, and content structuring. My diverse experience makes me a valuable asset for tech, education, customer support, or creative roles.
+  <section class="py-12 px-6 max-w-3xl mx-auto mb-8" data-aos="fade-up">
+    <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-center">Work Experience</h2>
+    <p class="text-center text-sm sm:text-base">
+      Since 2023, I’ve immersed myself in front-end development, creating
+      responsive web layouts, email templates, and UI prototypes. I currently
+      manage the front end of an academic platform, maintaining structured,
+      maintainable code while continuously improving UX/UI design. I also take
+      initiative in solo projects and freelance opportunities, contributing to
+      multiple areas such as accessibility, testing, and content structuring. My
+      diverse experience makes me a valuable asset for tech, education,
+      customer support, or creative roles.
     </p>
   </section>
 
   <!-- References -->
-  <section class="bg-white text-gray-800 py-12 px-6 mx-64 rounded-2xl" data-aos="fade-up">
-    <div class="max-w-5xl mx-auto">
-      <h2 class="text-3xl font-bold mb-4 text-center">References</h2>
-      <ul class="text-sm text-center space-y-2">
-        <li><strong>R. David</strong> – Kondi Computer College | +27 76723 7650 | Teacher</li>
-        <li><strong>Mrs. Singo</strong> – Vele Secondary | +27 72497 4014 | Principal</li>
-        <li><strong>B. Armstrong</strong> – AECI | +27 79096 2851 | Mentor</li>
-      </ul>
-    </div>
+  <section
+    class="bg-white text-gray-800 py-12 px-6 mx-4 sm:mx-8 md:mx-auto max-w-3xl rounded-2xl mb-8"
+    data-aos="fade-up"
+  >
+    <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-center">References</h2>
+    <ul class="text-sm sm:text-base text-center space-y-2 max-w-md mx-auto">
+      <li><strong>R. David</strong> – Kondi Computer College | +27 76723 7650 | Teacher</li>
+      <li><strong>Mrs. Singo</strong> – Vele Secondary | +27 72497 4014 | Principal</li>
+      <li><strong>B. Armstrong</strong> – AECI | +27 79096 2851 | Mentor</li>
+    </ul>
   </section>
 
   <!-- Declaration -->
-  <section class="py-12 px-6 max-w-5xl mx-auto" data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-4 text-center">Declaration</h2>
-    <p class="text-sm text-center">I declare that all the information provided is true and correct to the best of my knowledge.</p>
+  <section class="py-12 px-6 max-w-3xl mx-auto mb-12" data-aos="fade-up">
+    <h2 class="text-2xl sm:text-3xl font-bold mb-4 text-center">Declaration</h2>
+    <p class="text-sm sm:text-base text-center">
+      I declare that all the information provided is true and correct to the best
+      of my knowledge.
+    </p>
     <p class="mt-4 font-semibold text-center">Signature: BELE V</p>
   </section>
 
   <!-- Footer -->
-  <footer class="text-gray-400 text-center py-6 text-sm mt-10">
+  <footer class="text-gray-400 text-center py-6 text-sm mt-auto">
     &copy; 2025 Vhulenda Bele • Built with Tailwind CSS and Pure Intent
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script>AOS.init({ duration: 1000 });</script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
 </body>
 </html>
